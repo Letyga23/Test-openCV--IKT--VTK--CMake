@@ -10,8 +10,8 @@ int main()
     ITKTest itk;
 
     //open_image.openImage(R"(C:\Users\Admin\Pictures\Wallhaven\wallhaven-lmd95y.jpg)");
-    //vtk.show();
-    itk.show();
+    vtk.show();
+    //itk.show();
 
     return 0;
 }
