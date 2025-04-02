@@ -30,12 +30,8 @@ void OpenImage::openImage(const std::string& path, double percent)
     cv::createTrackbar("Resolution", window_name, &default_scale, max_scale, OpenImage::onResolution, this);
     cv::setTrackbarMin("Resolution", window_name, min_scale);
 
-    while (true) 
-    {
-        int key = cv::waitKey(30);  //Ожидаем 30 миллисекунд
-        if (key == 27)   //Код клавиши ESC
-            break;
-    }
+
+    cv::waitKey(0);
 }
 
 void OpenImage::getScreenResolution(int& width, int& height)
