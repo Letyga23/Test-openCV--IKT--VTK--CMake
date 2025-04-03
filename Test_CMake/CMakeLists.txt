@@ -20,3 +20,8 @@ vtk_module_autoinit(
     TARGETS Test_CMake
     MODULES ${VTK_LIBRARIES}
 )
+
+#Убираем консольное окно только на Windows
+if(WIN32)
+    set_target_properties(Test_CMake PROPERTIES LINK_FLAGS "/SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup")
+endif()

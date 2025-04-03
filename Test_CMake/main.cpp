@@ -1,4 +1,3 @@
-#pragma comment(linker, "/SUBSYSTEM:windows /ENTRY:mainCRTStartup")
 #include "Header/ImageWork/OpenImage.h"
 #include "Header/VTKTest.h"
 #include "Header/ITKTest.h"
